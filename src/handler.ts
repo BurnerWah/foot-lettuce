@@ -1,4 +1,6 @@
 import { Router } from 'itty-router'
+import { json } from 'itty-router-extras'
+import { known_routes } from './known_routes'
 import { loaders } from './loaders'
 
 const router = Router()
@@ -9,6 +11,7 @@ router.get('/all-clear', loaders.all_clear)
 router.get('/this-is-lettuce', loaders.all_clear)
 router.get('/burger-king-lettuce', loaders.all_clear)
 router.get('/original', loaders.original)
+router.get('/list', () => json(known_routes))
 router.get('/', loaders.original)
 router.all('*', loaders.original)
 
