@@ -1,10 +1,10 @@
 {
-  "editor.fontFamily": "'Comic Mono', 'Comic Sans MS', 'monospace', monospace",
-  "editor.codeLensFontFamily": "'Comic Mono', 'Comic Sans MS'",
-  "editor.inlayHints.fontFamily": "'Comic Mono', 'Comic Sans MS'",
-  "debug.console.fontFamily": "'Comic Mono', 'Comic Sans MS'",
-  "notebook.outputFontFamily": "'Comic Mono', 'Comic Sans MS'",
-  "terminal.integrated.fontFamily": "'Comic Mono', 'Comic Sans MS'",
-  "scm.inputFontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "editor.fontFamily": "'Comic Mono', 'Comic Sans MS', 'monospace', monospace",
+  // "editor.codeLensFontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "editor.inlayHints.fontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "debug.console.fontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "notebook.outputFontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "terminal.integrated.fontFamily": "'Comic Mono', 'Comic Sans MS'",
+  // "scm.inputFontFamily": "'Comic Mono', 'Comic Sans MS'",
   "jest.jestCommandLine": "node_modules/.bin/jest --config jestconfig.json --verbose"
 }
