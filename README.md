@@ -1,39 +1,19 @@
-# ʕ •́؈•̀) `worker-typescript-template`
+# Burger King Foot Lettuce Cloudflare Worker
 
-A batteries included template for kick starting a TypeScript Cloudflare worker project.
+Yes I really did make an entire cloudflare worker to play burger king foot lettuce.
 
-## Note: You must use [wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update) 1.17 or newer to use this template.
+It uses R2, TypeScript, and itty-router.
 
-## 🔋 Getting Started
+## Video Sources
 
-This template is meant to be used with [Wrangler](https://github.com/cloudflare/wrangler). If you are not already familiar with the tool, we recommend that you install the tool and configure it to work with your [Cloudflare account](https://dash.cloudflare.com). Documentation can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler/).
+The Original Version[^1] is pulled from *ᐯ丨乃乇 丂ㄒ卂ㄒ丨ㄖ几* on YouTube,
+and originates from [Chills](https://www.youtube.com/c/Chills15).
 
-To generate using Wrangler, run this command:
+The [All Clear](https://www.youtube.com/watch?v=mmoUAq1zrUA)
+and [Game Over](https://www.youtube.com/watch?v=DGr9MkWeAs4) versions are from the [SiIvaGunner](https://www.youtube.com/c/SiIvaGunner) channel.
+All Clear is uncredited according to the SiIvaGunner Wiki[^2],
+while Game Over was made by [Grambam36](https://siivagunner.fandom.com/wiki/Grambam36)[^3]
 
-```bash
-wrangler generate my-ts-project https://github.com/cloudflare/worker-typescript-template
-```
-
-### 👩 💻 Developing
-
-[`src/index.ts`](./src/index.ts) calls the request handler in [`src/handler.ts`](./src/handler.ts), and will return the [request method](https://developer.mozilla.org/en-US/docs/Web/API/Request/method) for the given request.
-
-### 🧪 Testing
-
-This template comes with jest tests which simply test that the request handler can handle each request method. `npm test` will run your tests.
-
-### ✏️ Formatting
-
-This template uses [`prettier`](https://prettier.io/) to format the project. To invoke, run `npm run format`.
-
-### 👀 Previewing and Publishing
-
-For information on how to preview and publish your worker, please see the [Wrangler docs](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#publish).
-
-## 🤢 Issues
-
-If you run into issues with this specific project, please feel free to file an issue [here](https://github.com/cloudflare/worker-typescript-template/issues). If the problem is with Wrangler, please file an issue [here](https://github.com/cloudflare/wrangler/issues).
-
-## ⚠️ Caveats
-
-The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/tooling/wrangler/configuration/environments/) to test things before deploying.
+[^1]: https://www.youtube.com/watch?v=9PWjqgM_CU8
+[^2]: https://siivagunner.fandom.com/wiki/All_Clear_-_Sneak_King
+[^3]: https://siivagunner.fandom.com/wiki/Game_Over_-_Sneak_King
