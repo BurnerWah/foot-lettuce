@@ -15,6 +15,11 @@ router.get('/list', () => json(known_routes))
 router.get('/', loaders.original)
 router.all('*', loaders.original)
 
+/**
+ * Handles incoming requests
+ * @param {Request} request - The incoming request.
+ * @returns A Promise that resolves to a Response object.
+ */
 export async function handleRequest(request: Request): Promise<Response> {
   return router.handle(request)
 }

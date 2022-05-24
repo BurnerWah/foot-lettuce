@@ -8,6 +8,11 @@ interface KnownRoutes {
   aliases: RouteAlias[]
 }
 
+/**
+ * It takes a path and returns the anticipated full url for that path.
+ * @param {string} path - The path to resolve.
+ * @returns The full url for the path.
+ */
 function routeMapper(path: string) {
   return `https://footlettuce.xyz/${path}`
 }

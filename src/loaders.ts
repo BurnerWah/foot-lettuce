@@ -2,7 +2,17 @@ import { videos } from './videos'
 
 const NoWebm = new Set(['TelegramBot (like TwitterBot)'])
 
-function WebmHandlerGen({ webm, mp4 }: { webm: videos; mp4: videos }) {
+/**
+ * It takes two videos, one in webm format and one in mp4 format, and returns a function that takes a
+ * request and returns a response
+ * @param {videos} webm - videos
+ * @param {videos} mp4 - videos
+ * @returns A function that returns a promise that resolves to a response.
+ */
+function WebmHandlerGen(
+  webm: videos,
+  mp4: videos,
+): (request: Request) => Promise<Response> {
   return async function (request: Request) {
     const ua = request.headers.get('User-Agent')
     if (ua && NoWebm.has(ua)) {
@@ -35,12 +45,6 @@ export const loaders: Record<string, (req: Request) => Promise<Response>> = {
       },
     })
   },
-  game_over: WebmHandlerGen({
-    webm: videos.game_over,
-    mp4: videos.game_over_mp4,
-  }),
-  all_clear: WebmHandlerGen({
-    webm: videos.all_clear,
-    mp4: videos.all_clear_mp4,
-  }),
+  game_over: WebmHandlerGen(videos.game_over, videos.game_over_mp4),
+  all_clear: WebmHandlerGen(videos.all_clear, videos.all_clear_mp4),
 }
